@@ -1,0 +1,13 @@
+.ButtonV2 {
+  &__Rounded {
+    border-radius: 0.313rem !important;
+  }
+  &__Muted {
+    color: var(--gray) !important;
+    background: #eceef4 !important;
+  }
+  &__yellow {
+    background-color: var(--yellow) !important;
+    border-color: var(--yellow) !important;
+  }
+}

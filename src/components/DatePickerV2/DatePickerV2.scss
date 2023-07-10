@@ -1,0 +1,118 @@
+.DatePickerV2 {
+  &__Container {
+    z-index: 100000 !important;
+
+    &--animation-in {
+      -webkit-animation-name: fadeIn;
+      animation-name: fadeIn;
+      -webkit-animation-duration: 0.5s;
+      animation-duration: 0.5s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+    @-webkit-keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    &--animation-out {
+      -webkit-animation-name: fadeOut;
+      animation-name: fadeOut;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+    @-webkit-keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    @keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.DatePicker {
+  display: inline-block !important;
+  width: 100% !important;
+  z-index: auto !important;
+
+  &__ResetDate {
+    display: flex;
+    align-self: center;
+    margin-bottom: 1.125rem;
+    margin-left: 0.438rem;
+  }
+}
+
+.DatePicker__calendarContainer {
+  z-index: 1000 !important;
+  left: 92% !important;
+  position: absolute;
+}
+
+.main-content {
+  overflow: visible !important;
+}
+
+.DatePicker__calendarArrow {
+  color: var(--secondary) !important;
+  left: 85% !important;
+  right: 0 !important;
+}
+
+.DatePicker__day
+  :not(.-selectedStart):not(.-selectedBetween):not(.-selectedEnd):not(.-selected) {
+  color: var(--secondary) !important;
+  border: 1px solid transparent !important;
+}
+
+.custom-calendar {
+  box-shadow: 0 0 8px 0 var(--secondary);
+  z-index: 1000 !important ;
+}
+
+.custom-today-day {
+  color: var(--secondary) !important;
+  border: 1px solid transparent !important;
+}
+
+.custom-today-day::after {
+  visibility: hidden; /* hide small border under the text */
+}
+
+.Calendar__day.-weekend:not(.-selected):not(.-blank):not(.-selectedStart):not(.-selectedEnd):not(.-selectedBetween) {
+  color: var(--gray);
+}
+
+.Calendar__day.-weekend.-today:not(.-selectedStart):not(.-selectedEnd):not(.-selectedBetween)::after {
+  background: var(--secondary);
+}
+
+.Calendar__day.-today:not(.-selectedStart):not(.-selectedEnd):not(.-selectedBetween) {
+  font-weight: 600;
+  color: var(--secondary) !important;
+  position: relative;
+}

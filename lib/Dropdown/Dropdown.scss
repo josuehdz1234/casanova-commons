@@ -1,0 +1,7 @@
+.Dropdown {
+  &__Popup {
+    &--force-in-screen {
+      inset-inline-start: 15px !important;
+    }
+  }
+}

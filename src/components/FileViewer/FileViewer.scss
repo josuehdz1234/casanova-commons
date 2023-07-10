@@ -1,0 +1,22 @@
+.FileViewer {
+  min-width: 30rem;
+  width: 90%;
+  height: 25rem;
+  margin-bottom: 1.5rem;
+  border: dashed 0.125rem #e2e2e2;
+  background-color: #fcfcfc;
+  > iframe, img {
+    width:100%;
+    height: 100%;
+  }
+}
+
+.ViewerControls {
+  min-width: 30rem;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  &__controls{
+    cursor: pointer;
+  }
+}

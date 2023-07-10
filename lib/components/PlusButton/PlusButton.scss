@@ -1,0 +1,44 @@
+.PlusButton {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+
+  &__Button {
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > div {
+      font-size: 2rem;
+      line-height: 1;
+    }
+  }
+
+  .text {
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+
+    &--secondary {
+      color: var(--secondary);
+    }
+    &--dark {
+      color: var(--dark);
+    }
+  }
+
+  &__Left  {
+    @extend .text;
+
+    margin-right: .5rem;
+  }
+
+  &__Right {
+    @extend .text;
+
+    margin-left: .5rem;
+  }
+}

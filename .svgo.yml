@@ -1,0 +1,3 @@
+plugins:
+  - prefixIds: false
+  - cleanupIDs: false

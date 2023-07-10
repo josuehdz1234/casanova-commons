@@ -1,0 +1,21 @@
+.Circle {
+  display: flex;
+  flex-direction: column;
+  width: 0.6rem;
+
+  &__Shape {
+    width: 0.45rem;
+    height: 0.45rem;
+    -moz-border-radius: 4.375rem;
+    -webkit-border-radius: 4.375rem;
+    border-radius: 4.375rem;
+    margin: 0.1rem;
+
+    &--primary {
+      background: var(--primary);
+    }
+    &--secondary {
+      background: var(--secondary);
+    }
+  }
+}

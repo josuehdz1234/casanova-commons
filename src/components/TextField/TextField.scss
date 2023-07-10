@@ -1,0 +1,36 @@
+$black: #333333;
+
+.TextField {
+  margin-bottom: 2.25rem !important;
+  &--no-mb{
+    margin-bottom: 0rem !important;
+  }
+  label {
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.17px;
+    color: $black;
+  }
+  span {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.19px;
+    color: $black;
+    word-break: break-word;
+  }
+
+  span[class^='text-'], span[class*='text-']{
+    font-weight: bold;
+  }
+
+  .text-default {
+    color:#9ea3b1
+  }
+
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="23px" viewBox="0 0 24 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icon/atras</title>
+    <desc>Created with Sketch.</desc>
+    <g id="01-Vehiculos" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="03.06-Carga-masiva-CARGAR---ERROR" transform="translate(-175.000000, -894.000000)" fill="#CF703E" fill-rule="nonzero">
+            <g id="card" transform="translate(99.000000, 234.000000)">
+                <g id="Boton/atras" transform="translate(36.000000, 644.000000)">
+                    <g id="icon/atras" transform="translate(40.000000, 15.000000)">
+                        <path d="M9.45994967,1.333 C9.86877972,0.889 10.5124108,0.889 10.9212408,1.333 C11.3162591,1.762 11.3162591,2.476 10.9212408,2.904 L3.5116567,10.951 L22.9622715,10.951 C23.5322395,10.951 24,11.443 24,12.062 C24,12.681 23.5322395,13.189 22.9622715,13.189 L3.5116567,13.189 L10.9212408,21.221 C11.3162591,21.665 11.3162591,22.38 10.9212408,22.808 C10.5124108,23.252 9.86877972,23.252 9.45994967,22.808 L0.296263663,12.856 C-0.0987545543,12.427 -0.0987545543,11.713 0.296263663,11.285 L9.45994967,1.333 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,113 @@
+$background-not-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+
+video {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.total-size {
+  height: 100%;
+  width: 100%;
+}
+
+.absolute-total {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.all-container {
+  @extend .absolute-total;
+  height: 100vh;
+  width: 100vw;
+  background-blend-mode: multiply;
+  background-image: $background-not-image;
+  z-index: 50;
+  position: fixed;
+}
+
+.camera {
+  @extend .absolute-total;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+
+  &__webcam {
+    @extend .total-size;
+    display: flex;
+    justify-content: center;
+
+    .camera__options {
+      display: flex;
+      position: absolute;
+      right: 0;
+      bottom: 45%;
+    }
+  }
+
+  &__functions {
+    &__container {
+      z-index: 5;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 8.438rem;
+      display: flex;
+    }
+
+    &__item {
+      min-width: 13.75rem;
+    }
+  }
+
+  &__list-of-images {
+    width: 37.5rem;
+    height: 6.688rem;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-left: 1.563rem;
+    align-content: center;
+  }
+}
+
+.view-image {
+  @extend .total-size;
+
+  &__container {
+    @extend .total-size;
+  }
+
+  &__functions-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: -3.125rem;
+    min-height: 6.25rem;
+    position: relative;
+    z-index: 100;
+
+    &--camera-button {
+      border: 0 !important;
+    }
+  }
+
+  &__image {
+    @extend .total-size;
+  }
+
+  &__not-image {
+    @extend .total-size;
+    background: $background-not-image;
+    min-width: 12.5rem;
+    min-height: 12.5rem;
+  }
+
+  &__paginator-container {
+    width: 100%;
+    margin-top: -2.656rem;
+  }
+}

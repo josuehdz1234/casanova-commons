@@ -1,0 +1,118 @@
+@import '../theme.scss';
+
+$border-size: 0.13859rem;
+
+.Table {
+  &__V2 {
+    border-collapse: separate;
+    border-spacing: 0 0.625rem;
+    margin-top: -0.625rem;
+
+    tbody tr {
+      background: white;
+    }
+
+    tbody tr:hover {
+      box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
+    }
+
+    thead .custom-table-head-bg th {
+      padding-top: 0rem;
+    }
+
+    td {
+      border-top: solid $border-size var(--light-gray) !important;
+      border-bottom: solid $border-size var(--light-gray) !important;
+      border-style: solid none;
+      padding: 0.625rem;
+      cursor: pointer;
+      background: white !important;
+      max-width: 23rem;
+    }
+
+    tr:hover td {
+      border-top: solid $border-size var(--secondary) !important;
+      border-bottom: solid $border-size var(--secondary) !important;
+    }
+
+    td:first-child {
+      border-left: solid $border-size var(--light-gray);
+      border-left-style: solid;
+      border-top-left-radius: 0.625rem;
+      border-bottom-left-radius: 0.625rem;
+    }
+
+    tr:hover td:first-child {
+      border-left: solid $border-size var(--secondary) !important;
+    }
+
+    td:last-child {
+      border-right: solid $border-size var(--light-gray);
+      border-right-style: solid;
+      border-bottom-right-radius: 0.625rem;
+      border-top-right-radius: 0.625rem;
+    }
+
+    tr:hover td:last-child {
+      border-right: solid $border-size var(--secondary) !important;
+    }
+  }
+
+  &__Thead {
+    &--primary {
+      background: var(--primary) !important;
+    }
+    &--dark {
+      background: $dark-purple !important;
+    }
+  }
+
+  .BodyRowCell {
+    min-height: 1.9rem;
+  }
+
+  .DropdownCell {
+    .text {
+      &__active {
+        margin-left: 1rem;
+      }
+    }
+
+    &:hover {
+      .text {
+        margin-left: 1rem;
+      }
+    }
+
+    &__Container {
+      transition: all 0.3s ease;
+      display: none;
+      position: absolute;
+      border-radius: 1rem;
+      width: 2.8rem;
+      height: 3.025rem;
+      margin-left: -1.2rem;
+      margin-top: -0.6rem;
+      z-index: 1;
+    }
+
+    .ShowDropdownCell {
+      transition: all 0.3s ease;
+      display: flex;
+    }
+
+    &:hover {
+      .DropdownCell__Container {
+        @extend .ShowDropdownCell;
+      }
+    }
+  }
+
+  .RemoveItemButton {
+    cursor: pointer;
+  }
+}
+
+.custom-table-head-bg {
+  background-color: white !important;
+}

@@ -1,0 +1,13 @@
+.mini-card-container {
+  display: flex;
+  border: 4px solid #eceef4;
+  border-radius: 26px;
+  justify-content: center;
+  cursor: pointer;
+
+  &-xs {
+    @extend .mini-card-container;
+    border: 2px solid #eceef4 !important;
+    border-radius: 11px !important;
+  }
+}

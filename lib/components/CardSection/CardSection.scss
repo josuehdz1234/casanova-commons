@@ -1,0 +1,48 @@
+$very-light-pink: #e2e2e2;
+.CardSection {
+  padding: 2.25rem 4.375rem;
+  border-radius: 0.6875rem;
+  box-shadow: 0 0 0.9375rem 0 rgba(0, 0, 0, 0.05);
+  border: solid 0.0625rem #eceef4;
+  background-color: #ffffff;
+  min-height: 5rem;
+  margin-bottom: 2.25rem;
+
+  &__right {
+    border-right: solid 0.625rem $very-light-pink;
+
+    &--success {
+      border-right: solid 0.625rem #44d7b6;
+    }
+
+    &--warning {
+      border-right: solid 0.625rem #f2a000;
+    }
+
+    &--danger {
+      border-right: solid 0.625rem #ff6476;
+    }
+
+    &--without-status {
+      border-right: solid 0 $very-light-pink;
+    }
+  }
+
+  &__top {
+    &--success {
+      border-top: solid 0.625rem #44d7b6;
+    }
+
+    &--warning {
+      border-top: solid 1.125rem #f2a000;
+    }
+
+    &--danger {
+      border-top: solid 0.625rem #ff6476;
+    }
+
+    &--without-status {
+      border-top: solid 0 $very-light-pink;
+    }
+  }
+}

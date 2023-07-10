@@ -1,0 +1,28 @@
+.absolute-positon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.SmallImage {
+  width: 4.375rem;
+  height: 4.375rem;
+  position: relative;
+
+  &__Check {
+    @extend .absolute-positon;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+  }
+
+  &__Image {
+    @extend .absolute-positon;
+    width: 100%;
+    height: 100%;
+    // margin: 0.5rem 1.875rem 0.563rem;
+  }
+}

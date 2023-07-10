@@ -1,0 +1,91 @@
+.DatePickerV1 {
+  width: 100%;
+  position: relative;
+  &__input {
+    &--open {
+      cursor: pointer;
+      div.form-group {
+        margin-bottom: 0;
+      }
+      input.form-control {
+        border: 2px solid #eceef4;
+        border-radius: 0.8rem 0.8rem 0 0;
+        border-bottom: solid 0;
+        background-color: white;
+        &:focus {
+          box-shadow: none;
+        }
+      }
+      input.formtopPosition {
+        border: 2px solid #eceef4;
+        border-radius: 0 0 0.8rem 0.8rem!important;
+        background-color: white;
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+    &--with-content:not(:disabled):not([type="number"]) {
+      input.form-control{
+        background-color: white;
+      }
+      .col-form-label{
+        visibility: visible;
+      }
+    }
+  }
+  &__calendar {
+    width: 100%;
+    height: 16rem;
+    border: 2px solid #eceef4;
+    position: absolute;
+    background-color: white;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+    display: none;
+    overflow-y: scroll;
+    &--open {
+      display: flex;
+    }
+
+    &__element {
+      font-weight: 900;
+      border-right: solid 0;
+      cursor: pointer;
+      padding: 0.5rem 0 0 0;
+      text-align: center;
+      white-space: nowrap;
+      border: none;
+      color: #007aff;
+      &--selected {
+        font-weight: normal;
+        color: black;
+      }
+    }
+    &__days-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 2.5rem);
+      grid-template-rows: repeat(5, 2rem);
+    }
+    &__months-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 6rem);
+      grid-template-rows: repeat(4, 3rem);
+      .page-link {
+        line-height: 2rem;
+      }
+    }
+    &__years-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 6rem);
+      grid-auto-rows: 3rem;
+      .page-link {
+        line-height: 2rem;
+      }
+    }
+  }
+  &__calendarTop {
+    top: -220px;
+  }
+}

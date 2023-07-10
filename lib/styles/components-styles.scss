@@ -1,0 +1,379 @@
+:root {
+  --light-gray: #eceef4;
+}
+
+.footer-content {
+  align-items: center;
+}
+.footer-content .mandatory {
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.footer-content .mandatory > span {
+  display: inline-block;
+  height: 25px;
+  padding: 3px;
+}
+
+.bottom-actions button {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.bottom-actions {
+  justify-content: flex-end;
+}
+
+.bottom-actions button:last-of-type {
+  margin-left: 1.875rem;
+}
+
+.vehicle-radio-input {
+  min-width: 25%;
+}
+
+#spnBackButton:hover > span > svg > g > g {
+  fill: white;
+}
+
+.table thead {
+  background-color: #f2a000;
+  color: white;
+}
+
+.sidebar-item-icon svg > g > g {
+  fill: #fff;
+}
+
+.sidebar-item-icon svg > path {
+  fill: #fff;
+}
+
+.active > .sidebar-item-icon svg > g > g {
+  fill: var(--blue);
+}
+
+.active > .sidebar-item-icon svg > g {
+  fill: var(--blue);
+}
+
+.active > .sidebar-item-icon svg > path {
+  fill: var(--blue);
+}
+
+.form_container {
+  margin-bottom: 2.6rem;
+}
+
+.btn-add {
+  width: 3.8rem;
+  height: 3.8rem;
+  padding: unset;
+  border-radius: 0.8rem;
+  border: solid 0.2rem #eceef4;
+  background-color: #ffffff;
+}
+
+.btn-add > .icon {
+  color: #007aff;
+  font-size: 2rem;
+}
+
+.btn-add-span {
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.full-row {
+  width: 100%;
+}
+
+.svg-icon-center {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.extra-row {
+  margin-top: -0.8rem;
+  justify-content: start;
+}
+.extra-row > .svg-icon {
+  margin-right: 0.8rem;
+  cursor: pointer;
+}
+.extra-row > .svg-icon:hover > svg > g > circle {
+  fill: green;
+}
+
+.extra-row > .svg-icon--active > svg > g > circle {
+  fill: #44d7b6;
+}
+
+.extra-row > .text {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #8e8e93;
+  font-weight: bold;
+}
+
+.extra-row > .text--success {
+  color: #44d7b6;
+}
+
+.removable {
+  cursor: pointer;
+}
+
+.removable:hover > svg > g > circle {
+  fill: red;
+}
+.section__right {
+  width: 50%;
+}
+
+.Checkbox {
+  display: flex;
+  align-items: center;
+}
+input[type='radio'] {
+  box-sizing: border-box;
+  padding: 0;
+  z-index: 0;
+  margin-top: -6px;
+  height: 36px;
+  /**margin-left: 22px;**/
+  cursor: pointer;
+}
+input[type='checkbox'] {
+  box-sizing: border-box;
+  padding: 0;
+  z-index: 1;
+  margin-top: -6px;
+  height: 36px;
+  margin-left: 0;
+  cursor: pointer;
+}
+.Checkbox .Checkbox__input {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.5rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.5rem;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+.Checkbox .Checkbox__label {
+  font-size: 0.8rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  color: #8e8e93;
+  padding-top: 0.45rem;
+}
+
+.padding__error_stand {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+}
+
+div.dash {
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-right: 0.8rem;
+  background-color: var(--green);
+  border-radius: 50%;
+}
+
+div.dash--error {
+  background-color: var(--red);
+}
+
+div.dash--default {
+  background-color: #9da3b2;
+}
+
+div.dash--warning {
+  background-color: #f2a000;
+}
+
+div.dash--secondary {
+  background-color: #007aff;
+}
+
+.cell-content {
+  padding-left: 5rem !important;
+}
+
+.seat-type {
+  flex-wrap: wrap;
+}
+
+.seat-type:nth-child(2) {
+  order: 3;
+  flex-basis: 100%;
+}
+
+.common-info-text {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.17px;
+}
+
+.common-muted-text {
+  font-weight: 0.75rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #9ea3b1;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.orange-title {
+  font-size: 1rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #f2a000;
+}
+
+.common-amount-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #f2a000;
+}
+
+.gray-amount-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #9ea3b1;
+}
+
+.gray-disclaimer {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  background-color: #f2f2f2;
+  margin-bottom: 1.5rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #333;
+}
+
+.text-decoration-line-through {
+  text-decoration: line-through;
+}
+
+.disclaimer {
+  display: flex;
+  flex-direction: column;
+}
+
+.disclaimer > .disclaimer-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #d27b4d;
+  line-height: normal;
+}
+
+.disclaimer > .disclaimer-body {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.disclaimer > .disclaimer-branch > span {
+  margin-right: 1rem;
+}
+
+.mb-8 {
+  margin-bottom: 8rem !important;
+}
+
+.bg-orange {
+  background-color: #d27b4d;
+}
+
+.pdf-viewer {
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.pdf-viewer > iframe {
+  width: 100%;
+  height: 55rem;
+}
+
+.card-block {
+  background: #ffffff;
+  border: 1px solid #eceef4;
+  border-radius: 8px;
+}
+
+.DatePickerV2__Container--animation-in[data-popper-placement^='bottom'] {
+  left: 70vw !important;
+  position: absolute !important;
+}
+
+@media (max-width: 1200px) {
+  .bottom-actions {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .bottom-actions button {
+    min-width: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .bottom-actions button:first-of-type {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .bottom-actions {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 1024px) {
+  .table-paginator {
+    justify-content: center !important;
+    margin-bottom: 2rem;
+  }
+}

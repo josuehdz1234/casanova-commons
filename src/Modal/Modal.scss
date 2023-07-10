@@ -1,0 +1,17 @@
+.BigModal {
+  min-height: 80vh;
+
+  &__Container {
+    min-width: 80vw;
+  }
+
+  &__Content {
+    max-height: 90vh;
+    overflow: auto;
+    overflow-x: clip;
+  }
+
+  &__BottomBarContainer {
+    margin-top: -3rem;
+  }
+}

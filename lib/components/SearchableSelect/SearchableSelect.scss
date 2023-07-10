@@ -1,0 +1,71 @@
+.SercheableSelect {
+  width: 100%;
+  position: relative;
+  &__input {
+    &--open {
+      cursor: pointer;
+      div.form-group {
+        margin-bottom: 0;
+      }
+      input.form-control {
+        border: 2px solid #eceef4;
+        border-radius: 0.5rem 0.5rem 0 0;
+        border-bottom: solid 0;
+        background-color: white;
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+    &--with-content:not(:disabled):not([type='number']) {
+      input.form-control {
+        background-color: white;
+      }
+      .col-form-label {
+        visibility: visible;
+      }
+    }
+  }
+  &__options {
+    width: 100%;
+    max-height: 16rem;
+    border: 2px solid #eceef4;
+    position: absolute;
+    background-color: white;
+    flex-direction: column;
+    z-index: 2;
+    display: none;
+    overflow-y: scroll;
+
+    &--open {
+      display: flex;
+    }
+
+    .col-form-label {
+      padding: 0.5rem 1rem;
+    }
+
+    &__element {
+      font-weight: 900;
+      width: 100%;
+      border-right: solid 0;
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+      text-align: left;
+      white-space: nowrap;
+      border: none;
+      color: #007aff;
+      &--selected {
+        font-weight: normal;
+        color: black;
+        background-color: #eceef4;
+      }
+      &:hover {
+        background-color: #eceef4;
+      }
+    }
+  }
+}
+.__element-disabled {
+  color: #dee2e6;
+}

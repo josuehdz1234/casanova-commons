@@ -1,0 +1,29 @@
+.LoaderCasanova {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 150;
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__Content {
+    width: auto !important;
+    height: 60px !important;
+    padding-top: 5% !important;
+  }
+
+  &--inner {
+    position: relative;
+    width: unset;
+    height: unset;
+
+    & > div {
+      margin-left: 0% !important;
+      margin-top: 0% !important;
+    }
+  }
+}

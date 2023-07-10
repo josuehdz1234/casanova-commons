@@ -1,0 +1,11 @@
+.title {
+  color: #007aff;
+  font-weight: bolder;
+}
+.subTitle {
+  font-weight: normal;
+}
+
+.leftBack {
+  cursor: pointer;
+}
